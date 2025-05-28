@@ -1,0 +1,120 @@
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  .navbarContainer {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0px;
+    z-index: 1000;
+    position: relative;
+    height: 80px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 50px;
+        width: auto;
+        cursor: pointer;
+      }
+    }
+
+    .navbarLinks {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 2rem;
+      margin-right: 30px;
+
+      #homeButton,
+      #bookingButton,
+      #contactButton {
+        text-align: center;
+        text-decoration: none;
+
+        a {
+          color: black;
+          text-decoration: none;
+          font-size: 1rem;
+        }
+
+        &:hover {
+          a {
+            color: #aaa;
+          }
+        }
+      }
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 2000;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+
+      .bar {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 4px 0;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      }
+
+      &.open {
+        .bar:nth-child(1) {
+          transform: translateY(11px) rotate(45deg);
+        }
+
+        .bar:nth-child(2) {
+          opacity: 0;
+        }
+
+        .bar:nth-child(3) {
+          transform: translateY(-11px) rotate(-45deg);
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .navbarLinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100vw;
+        background-color: white;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px 0;
+      }
+
+      .navbarLinks.showMenu {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+  }
+}

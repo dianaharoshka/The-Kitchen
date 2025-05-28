@@ -1,0 +1,18 @@
+@use "./styles/booking";
+@use "./styles/calendar";
+
+#root {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: #e9f1f7;
+}
+
+body {
+  font-family: "Fahkwang", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}

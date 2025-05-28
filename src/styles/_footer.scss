@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+.footerContainer {
+  width: 100%;
+  background-color: #ffffff;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 0;
+
+  a {
+    font-family: "Fahkwang", sans-serif;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #bbb;
+    }
+  }
+
+  p {
+    font-family: "Fahkwang", sans-serif;
+    margin: 8px 0;
+    font-size: 16px;
+    color: #000;
+  }
+
+  .footerLinks,
+  .footerContact,
+  .footerSocials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+  }
+
+  .footerMisc {
+    position: relative;
+    bottom: -20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    padding: 30px 10px;
+    text-align: center;
+
+    .footerLinks,
+    .footerContact,
+    .footerSocials {
+      margin-bottom: 20px;
+    }
+  }
+}
