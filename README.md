@@ -55,3 +55,11 @@ I developed the Booking Page for this project. The project was created in collab
 -  
   
   We worked together using Agile Scrum methodology with task planning and progress tracking.
+
+![Skärmbild 2025-05-28 123630](https://github.com/user-attachments/assets/5d1ec846-173c-4d20-8cf0-5959d6d44a37)
+
+## 🚀 Live Demo
+
+You can view the live version https://the-kitchen-group-project.netlify.app/
+
+  
